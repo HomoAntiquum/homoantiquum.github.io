@@ -21,7 +21,7 @@
 title: Logos Antiquum
 email: logos@homoantiquum.com
 description: >- # this means to ignore newlines until "baseurl:"
-  古代记录
+  古代人的记录
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: homoantiquum
