@@ -2,5 +2,7 @@
   "tabSize": 8,
   "newFileLocation": "folder",
   "newFileFolderPath": "_posts",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute",
+  "attachmentFolderPath": "assets/images"
 }
