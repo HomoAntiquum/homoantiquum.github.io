@@ -3,7 +3,6 @@ layout: post
 tags:
   - 工具
 ---
-![效果预览](/assets/images/20231230133746.png)
 这篇文章主要是关于在 Windows 平台上使用 Vim 作为终端的一些设置。
 
 上篇文章提到：Vim 在 Windows 下会把 Ansi Color Codes 中的红蓝、黄青搞反。我们可以用以下这个脚本确认终端的 Ansi Color Palette 。
