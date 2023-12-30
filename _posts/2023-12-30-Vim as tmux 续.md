@@ -3,7 +3,7 @@ layout: post
 tags:
   - 工具
 ---
-![效果预览](assets/images/20231230133746.png)
+![效果预览](/assets/images/20231230133746.png)
 这篇文章主要是关于在 Windows 平台上使用 Vim 作为终端的一些设置。
 
 上篇文章提到：Vim 在 Windows 下会把 Ansi Color Codes 中的红蓝、黄青搞反。我们可以用以下这个脚本确认终端的 Ansi Color Palette 。
@@ -39,10 +39,10 @@ echo
 ```
 
 这是在正常终端中的效果：
-![](assets/images/20231230134400.png)
+![](/assets/images/20231230134400.png)
 
 而这是在 Vim 中的效果：
-![](assets/images/20231230135018.png)
+![](/assets/images/20231230135018.png)
 
 可以看到颜色确实没有设置对，我猜测的是 Vim 在 Windows 下读取终端的颜色时把顺序搞错了，可能跟平台的定义也有关系。
 
@@ -70,7 +70,7 @@ set termguicolors
 set t_Co=256
 ```
 
-![](assets/images/20231230145532.png)
+![](/assets/images/20231230145532.png)
 可以看到这时终端里的色彩终于是正确顺序了，但是可以发现我平时使用的 [Starship](https://starship.rs/) Prompt 的颜色不太对。很明显这里它在使用终端的 Ansi 颜色，但 Starship 本身是支持真彩色的。
 
 那么可以猜到 Vim 的终端在 Windows 上不能告诉程序终端支持真彩色，所以我又去读了读文档，发现 Vim 在 Windows 上有 WinPTY 和 ConPTY 两种类型，其中 ConPTY 是新的实验性的终端类型，只有在比较新的 Windows 10 上才能使用。
@@ -87,7 +87,7 @@ else
 endif
 ```
 
-![](assets/images/20231230150453.png)
+![](/assets/images/20231230150453.png)
 不错！现在 Starship 在 Vim 的终端里也能显示正确的彩色了。
 
 最后我们稍微调整一下 Windows Terminal 的 color scheme 的背景（使边框色差不可见），就可以得到一个相当漂亮且好用的 pseudo tmux 了。
@@ -110,4 +110,4 @@ endif
 ]
 ```
 
-![最终效果](assets/images/20231230133746.png)
+![最终效果](/assets/images/20231230133746.png)
