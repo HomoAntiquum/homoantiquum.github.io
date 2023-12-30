@@ -110,4 +110,5 @@ endif
 ]
 ```
 
-![最终效果](/assets/images/20231230133746.png)
+![亮色效果](/assets/images/20231230133746.png)
+![暗色效果](/assets/images/20231230153318.png)
